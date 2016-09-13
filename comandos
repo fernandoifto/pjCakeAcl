@@ -1,0 +1,35 @@
+#Cria o projeto CakePHP
+composer create-project --prefer-dist cakephp/app pjCakeAcl
+
+#Adciona tema twitter bootstrap
+composer require cakephp-brasil/twitter-bootstrap
+
+#Configure o banco de dados no arquivo /pjCakeAcl/config/app.php
+#Roda a migration
+bin/cake migrations migrate
+
+#Add no arquivo /pjCakeAclsrc/View/AppView.php
+public function initialize()
+{
+  $this->loadHelper('Form', ['className' => 'TwitterBootstrap.Form']);
+}
+
+#Add no arquivo /pjCakeAcl/config/bootstrap.php
+Plugin::load('TwitterBootstrap');
+
+#Execultar os bakes
+bin/cake bake all articles -t TwitterBootstrap
+bin/cake bake all comments -t TwitterBootstrap
+bin/cake bake all groups -t TwitterBootstrap
+bin/cake bake all messages -t TwitterBootstrap
+bin/cake bake all pages -t TwitterBootstrap
+bin/cake bake all plans -t TwitterBootstrap
+bin/cake bake all users -t TwitterBootstrap
+
+#Add no arquivo /pjCakeAcl/src/Controller/AppController.php
+public function beforeFilter(Event $event){
+  $this->viewBuilder()->layout('TwitterBootstrap.adminlte');
+}
+
+#Execulte o comando para publicar a aplicação
+bin/cake TwitterBootstrap.publish all

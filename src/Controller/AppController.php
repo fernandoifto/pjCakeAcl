@@ -45,6 +45,10 @@ class AppController extends Controller
         $this->loadComponent('Flash');
     }
 
+    public function beforeFilter(Event $event){
+      $this->viewBuilder()->layout('TwitterBootstrap.adminlte');
+    }
+
     /**
      * Before render callback.
      *
