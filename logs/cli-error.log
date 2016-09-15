@@ -1,0 +1,12 @@
+2016-09-15 14:06:01 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Bate" could not be found.
+Exception Attributes: array (
+  'class' => 'Bate',
+)
+Stack Trace:
+#0 /home/fernando/projects/pjCakeAcl/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('bate')
+#1 /home/fernando/projects/pjCakeAcl/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /home/fernando/projects/pjCakeAcl/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /home/fernando/projects/pjCakeAcl/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+

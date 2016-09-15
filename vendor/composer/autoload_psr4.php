@@ -30,4 +30,6 @@ return array(
     'Aura\\Intl\\_Config\\' => array($vendorDir . '/aura/intl/config'),
     'App\\Test\\' => array($baseDir . '/tests'),
     'App\\' => array($baseDir . '/src'),
+    'Access\\Test\\' => array($baseDir . '/plugins/Access/tests'),
+    'Access\\' => array($baseDir . '/plugins/Access/src'),
 );

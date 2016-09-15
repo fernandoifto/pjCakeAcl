@@ -1,0 +1,41 @@
+2016-09-15 13:10:32 Error: Fatal Error (4): syntax error, unexpected ''Login'' (T_CONSTANT_ENCAPSED_STRING) in [/home/fernando/projects/pjCakeAcl/src/Template/Users/login.ctp, line 6]
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-15 13:10:32 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''Login'' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/fernando/projects/pjCakeAcl/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/fernando/...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-15 13:47:18 Error: Fatal Error (1): Call to undefined method Cake\Controller\Component\AuthComponent::indentify() in [/home/fernando/projects/pjCakeAcl/src/Controller/UsersController.php, line 16]
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-15 13:47:18 Warning: Headers already sent in /home/fernando/projects/pjCakeAcl/src/Controller/UsersController.php:16
+2016-09-15 13:47:18 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\Controller\Component\AuthComponent::indentify()
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/fernando/projects/pjCakeAcl/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/fernando/...', 16)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

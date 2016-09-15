@@ -224,3 +224,5 @@ if (Configure::read('debug')) {
 
 Plugin::load('Migrations');
 Plugin::load('TwitterBootstrap');
+
+Plugin::load('Access', ['bootstrap' => false, 'routes' => true]);

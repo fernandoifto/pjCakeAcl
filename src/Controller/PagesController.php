@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Pages Controller
@@ -11,6 +12,10 @@ use App\Controller\AppController;
 class PagesController extends AppController
 {
 
+    public function beforeFilter(Event $event){
+      parent::beforeFilter($event);
+      $this->Auth->allow('index');
+    }
     /**
      * Index method
      *

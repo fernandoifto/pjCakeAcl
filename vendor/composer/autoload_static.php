@@ -71,6 +71,8 @@ class ComposerStaticInitfcbb581889fd60ec32790a2065959d75
             'Aura\\Intl\\_Config\\' => 18,
             'App\\Test\\' => 9,
             'App\\' => 4,
+            'Access\\Test\\' => 12,
+            'Access\\' => 7,
         ),
     );
 
@@ -170,6 +172,14 @@ class ComposerStaticInitfcbb581889fd60ec32790a2065959d75
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Access\\Test\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/plugins/Access/tests',
+        ),
+        'Access\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/plugins/Access/src',
         ),
     );
 

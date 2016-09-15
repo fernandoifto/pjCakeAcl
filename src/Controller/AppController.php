@@ -43,10 +43,18 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+            'loginAction' =>[
+                'plugin' => 'access',
+                'controller' => 'users',
+                'action' => 'login'
+            ]
+        ]);
     }
 
     public function beforeFilter(Event $event){
       $this->viewBuilder()->layout('TwitterBootstrap.adminlte');
+      //$this->Auth->allow();
     }
 
     /**
