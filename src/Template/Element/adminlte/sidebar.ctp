@@ -40,8 +40,8 @@
     <li><a href="/comments"><i class="fa fa-link"></i> <span>Comentarios</span></a></li>
     <li><a href="/pages"><i class="fa fa-link"></i> <span>Páginas</span></a></li>
     <li><a href="/plans"><i class="fa fa-link"></i> <span>Planos</span></a></li>
-    <li><a href="/groups"><i class="fa fa-link"></i> <span>Grupos</span></a></li>
-    <li><a href="/users"><i class="fa fa-link"></i> <span>Úsuarios</span></a></li>
+    <li><a href="/access/groups"><i class="fa fa-link"></i> <span>Grupos</span></a></li>
+    <li><a href="/access/users"><i class="fa fa-link"></i> <span>Úsuarios</span></a></li>
     <!--<li class="treeview">
       <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
       <ul class="treeview-menu">
